@@ -13,8 +13,7 @@ const Hero = () => {
             Full-Stack Developer & Software Engineer
           </p>
           <p>
-            Passionate about creating secure, scalable, and user-friendly web applications 
-            using modern technologies and best practices.
+            Passionate about creating secure, scalable, and impactful projects that better the people around me.
           </p>
         </div>
       </div>
