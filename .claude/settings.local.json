@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(xcopy:*)",
+      "Bash(rmdir:*)",
+      "Bash(robocopy:*)",
+      "Bash(powershell:*)",
+      "Bash(npm install)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": []
+  }
+}
