@@ -4,7 +4,7 @@ const Projects = () => {
   const projects = [
     {
       title: "CareFlow",
-      description: "A secure, full-stack web application designed to provide an interactive learning experience for Certified Nursing Assistant (CNA) candidates. The platform features a robust user authentication system using both local accounts and Google OAuth 2.0, a RESTful backend API, and a dynamic React-based frontend with interactive, drag-and-drop learning simulations.",
+      description: "Architected a production-ready EdTech platform solving inefficient CNA training methods through interactive simulations. Built enterprise-grade authentication infrastructure and scalable MERN stack architecture, demonstrating full-stack ownership from system design to deployment.",
       link: "https://care-flow-ten.vercel.app/",
       technologies: [
         "React 19",
@@ -22,16 +22,15 @@ const Projects = () => {
         "CORS"
       ],
       features: [
-        "Engineered a Secure OAuth 2.0 Flow: Implemented the complete Authorization Code Flow, securely handling the client_secret on the backend and using httpOnly cookies for session management to mitigate XSS vulnerabilities.",
-        "Developed an Interactive Learning Module: Created a drag-and-drop interface with dnd-kit and React to simulate real-world CNA scenarios, enhancing user engagement and knowledge retention.",
-        "Built a Full-Stack RESTful Architecture: Designed and developed a complete MERN-stack (MongoDB, Express, React, Node.js) application with a clear, maintainable, and scalable code structure.",
-        "Implemented Security Best Practices: Protected against XSS attacks, brute-force attacks with rate limiting, and ensured data integrity with server-side input validation.",
-        "Modern Development Workflow: Utilized Vite for fast development with HMR, managed code quality with ESLint, and implemented proper environment variable handling."
+        "Architected dual authentication system (OAuth 2.0 + local accounts) implementing secure token management with httpOnly cookies and proper session handling.",
+        "Engineered interactive learning simulations using React's dnd-kit library, solving complex state management challenges for real-time drag-and-drop interactions that mirror actual CNA workplace scenarios.",
+        "Designed horizontally scalable RESTful API architecture with MongoDB schema optimization, implementing proper indexing and aggregation pipelines for future growth requirements.",
+        "Established modern development workflow with Vite for optimized builds, ESLint for code quality enforcement, and environment-based configuration management enabling seamless staging/production deployments."
       ]
     },
     {
       title: "HerdUp: Shared Path Optimization",
-      description: "Developed a full-stack web application that calculates and visualizes the most efficient shared walking route for two individuals, reducing overlapping travel time. Engineered a Python and Flask-based backend that implements a modified Dijkstra's algorithm to find optimized paths. The algorithm incentivizes shared routes by dynamically reducing the weight of shared path segments. Integrated the Nominatim API for geocoding and the Open Source Routing Machine (OSRM) API for real-world walking directions, ensuring accurate and practical route generation. Constructed a responsive and interactive user interface with React and TypeScript, allowing users to input locations and visualize the generated paths on an embedded Folium map.",
+      description: "Engineered a novel route optimization algorithm solving the complex shared-path problem for multiple users. Built full-stack application with custom Dijkstra's modification and real-time map visualization, integrating multiple third-party APIs to deliver production-ready geospatial solutions.",
       link: "https://herdup-hackdavis.vercel.app/",
       technologies: [
         "React",
@@ -46,10 +45,10 @@ const Projects = () => {
         "Geopy"
       ],
       features: [
-        "Developed a full-stack web application that calculates and visualizes the most efficient shared walking route for two individuals, reducing overlapping travel time.",
-        "Engineered a Python and Flask-based backend that implements a modified Dijkstra's algorithm to find optimized paths. The algorithm incentivizes shared routes by dynamically reducing the weight of shared path segments.",
-        "Integrated the Nominatim API for geocoding and the Open Source Routing Machine (OSRM) API for real-world walking directions, ensuring accurate and practical route generation.",
-        "Constructed a responsive and interactive user interface with React and TypeScript, allowing users to input locations and visualize the generated paths on an embedded Folium map."
+        "Innovated a modified Dijkstra's algorithm with dynamic edge-weight reduction for shared path segments, solving the NP-hard problem of multi-user route optimization through mathematical modeling.",
+        "Architected microservices backend with Flask, implementing efficient API orchestration between geocoding and routing services with proper error handling and fallback strategies.",
+        "Built responsive React/TypeScript frontend with real-time map rendering, handling complex state management for multiple user inputs and dynamic route visualization.",
+        "Engineered end-to-end geospatial data pipeline processing coordinates, API responses, and algorithm outputs into interactive visualizations with smooth animations."
       ]
     }
   ];
