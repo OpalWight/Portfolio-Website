@@ -126,108 +126,15 @@ body {
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.project-card {
-  background: var(--light-gray);
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 4px 15px var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 4px solid var(--soft-purple);
-}
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px var(--shadow);
-}
 
-.project-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-}
-
-.project-card p {
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.project-link {
-  display: inline-block;
-  background: linear-gradient(45deg, var(--soft-purple), var(--soft-pink));
-  color: var(--white);
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
-  font-weight: 500;
-  transition: transform 0.3s ease;
-}
-
-.project-link:hover {
-  transform: scale(1.05);
-}
-
-.tech-stack {
-  margin-top: 1rem;
-}
-
-.tech-stack h4 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-primary);
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tech-tag {
-  background: var(--soft-blue);
-  color: var(--text-primary);
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.project-features {
-  margin-top: 1rem;
-}
-
-.project-features h4 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-primary);
-}
-
-.project-features ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.project-features li {
-  color: var(--text-secondary);
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
-  position: relative;
-  line-height: 1.6;
-}
-
-.project-features li::before {
-  content: "▶";
-  color: var(--soft-purple);
-  position: absolute;
-  left: 0;
-  font-size: 0.8rem;
-}
 
 /* Footer */
 .footer {
