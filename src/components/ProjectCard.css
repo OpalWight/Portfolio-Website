@@ -125,6 +125,34 @@
   background-color: #0056b3;
 }
 
+/* Side projects layout */
+.side-projects {
+  display: flex;
+  gap: 40px;
+  margin: 40px 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.side-project-card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.side-project-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.5em;
+  color: #333;
+}
+
 @media (max-width: 768px) {
   .project-container {
     flex-direction: column !important;
@@ -137,5 +165,10 @@
   
   .project-card {
     min-height: auto;
+  }
+  
+  .side-projects {
+    flex-direction: column;
+    gap: 20px;
   }
 }

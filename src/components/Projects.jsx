@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "CareFlow",
       description: "Architected a production-ready EdTech platform solving inefficient CNA training methods through AI-powered RAG implementation and interactive simulations. Built enterprise-grade authentication infrastructure with vector database integration, web scraping pipeline, and intelligent quiz generation, demonstrating full-stack ownership from system design to deployment.",
-      link: "https://careflowlearn.org",
+      link: "https://github.com/OpalWight/CareFlow",
       technologies: [
         "React 19",
         "Node.js",
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: "HerdUp: Shared Path Optimization",
       description: "Engineered a novel route optimization algorithm solving the complex shared-path problem for multiple users. Built full-stack application with custom Dijkstra's modification and real-time map visualization, integrating multiple third-party APIs to deliver production-ready geospatial solutions.",
-      link: "https://herdup-hackdavis.vercel.app/",
+      link: "https://github.com/OpalWight/HerdUp",
       technologies: [
         "React",
         "TypeScript", 
@@ -61,7 +61,7 @@ const Projects = () => {
     {
       title: "PC Parts Sentiment Analyzer",
       description: "Engineered a comprehensive sentiment analysis tool that processes Reddit discussions to analyze brand perception across PC component categories. Built scalable data pipeline with Reddit API integration and VADER sentiment analysis, delivering actionable insights for hardware enthusiasts and market researchers.",
-      link: "https://github.com/OpalWight",
+      link: "https://github.com/OpalWight/PCPartsSentiment",
       technologies: [
         "Python",
         "NLTK",
@@ -79,7 +79,7 @@ const Projects = () => {
     {
       title: "Hand Tracker",
       description: "Developed real-time hand tracking and gesture recognition system using computer vision techniques. Built interactive application with webcam integration for gesture-based controls and hand landmark detection.",
-      link: "https://github.com/OpalWight",
+      link: "https://github.com/OpalWight/handtracker",
       technologies: [
         "Python",
         "OpenCV",
@@ -95,13 +95,53 @@ const Projects = () => {
     }
   ];
 
+  const mainProjects = projects.slice(0, 2); // CareFlow and HerdUp
+  const sideProjects = projects.slice(2, 4); // PC Parts and Hand Tracker
+
   return (
     <section id="projects" className="section projects">
       <div className="container">
         <h2 className="section-title">My Projects</h2>
         <div className="projects-grid">
-          {projects.map((project, index) => (
+          {mainProjects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
+          ))}
+        </div>
+        <div className="side-projects">
+          {sideProjects.map((project, index) => (
+            <div key={index + 2} className="side-project-card">
+              <h3>{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              
+              <div className="tech-stack">
+                <h4>Technologies Used:</h4>
+                <div className="tech-tags">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="project-features">
+                <h4>Key Features:</h4>
+                <ul>
+                  {project.features.map((feature, featureIndex) => (
+                    <li key={featureIndex}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+              
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="project-link"
+              >
+                View Project
+              </a>
+            </div>
           ))}
         </div>
       </div>
