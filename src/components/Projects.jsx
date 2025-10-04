@@ -61,7 +61,7 @@ const Projects = () => {
     {
       title: "PC Parts Sentiment Analyzer",
       description: "Engineered a comprehensive sentiment analysis tool that processes Reddit discussions to analyze brand perception across PC component categories. Built scalable data pipeline with Reddit API integration and VADER sentiment analysis, delivering actionable insights for hardware enthusiasts and market researchers.",
-      link: "https://github.com/your-username/PCPartsSentiment",
+      link: "https://github.com/OpalWight",
       technologies: [
         "Python",
         "NLTK",
@@ -74,6 +74,23 @@ const Projects = () => {
         "Developed intelligent brand recognition engine using regex patterns across 8 PC component categories (CPU, GPU, motherboard, memory, storage, PSU, case, cooling) with comprehensive brand database.",
         "Implemented VADER sentiment analysis pipeline delivering real-time sentiment scores and brand rankings, enabling data-driven insights into hardware community preferences.",
         "Built modular CLI interface with configurable parameters for post count and verbose output, featuring environment-based configuration management for seamless deployment across environments."
+      ]
+    },
+    {
+      title: "Hand Tracker",
+      description: "Developed real-time hand tracking and gesture recognition system using computer vision techniques. Built interactive application with webcam integration for gesture-based controls and hand landmark detection.",
+      link: "https://github.com/OpalWight",
+      technologies: [
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "NumPy"
+      ],
+      features: [
+        "Implemented real-time hand detection and tracking using MediaPipe framework with optimized performance for live video processing.",
+        "Developed gesture recognition algorithms for interactive controls and hand landmark analysis with high accuracy detection.",
+        "Built responsive computer vision pipeline with webcam integration and customizable tracking parameters.",
+        "Engineered modular architecture supporting multiple hand tracking modes and gesture classification systems."
       ]
     }
   ];
