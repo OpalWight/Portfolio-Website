@@ -4,8 +4,8 @@ const Projects = () => {
   const projects = [
     {
       title: "CareFlow",
-      description: "Architected a production-ready EdTech platform solving inefficient CNA training methods through interactive simulations. Built enterprise-grade authentication infrastructure and scalable MERN stack architecture, demonstrating full-stack ownership from system design to deployment.",
-      link: "https://care-flow-ten.vercel.app/",
+      description: "Architected a production-ready EdTech platform solving inefficient CNA training methods through AI-powered RAG implementation and interactive simulations. Built enterprise-grade authentication infrastructure with vector database integration, web scraping pipeline, and intelligent quiz generation, demonstrating full-stack ownership from system design to deployment.",
+      link: "https://careflowlearn.org",
       technologies: [
         "React 19",
         "Node.js",
@@ -19,12 +19,19 @@ const Projects = () => {
         "Vite",
         "ESLint",
         "Axios",
-        "CORS"
+        "CORS",
+        "Pinecone",
+        "Google Gemini AI",
+        "Vector Embeddings",
+        "RAG Architecture"
       ],
       features: [
         "Architected dual authentication system (OAuth 2.0 + local accounts) implementing secure token management with httpOnly cookies and proper session handling.",
         "Engineered interactive learning simulations using React's dnd-kit library, solving complex state management challenges for real-time drag-and-drop interactions that mirror actual CNA workplace scenarios.",
         "Designed horizontally scalable RESTful API architecture with MongoDB schema optimization, implementing proper indexing and aggregation pipelines for future growth requirements.",
+        "Implemented AI-powered RAG (Retrieval-Augmented Generation) system using Pinecone vector database and Google Gemini, enabling intelligent quiz generation from scraped CNA training content with 15,000+ knowledge chunks.",
+        "Engineered comprehensive web scraping pipeline that processes nursing education resources into structured knowledge base, automatically chunking content with metadata for optimal retrieval performance.",
+        "Built adaptive quiz system with competency-based question distribution, real-time grading, and AI-powered skill verification that dynamically adjusts to student performance and learning objectives.",
         "Established modern development workflow with Vite for optimized builds, ESLint for code quality enforcement, and environment-based configuration management enabling seamless staging/production deployments."
       ]
     },
