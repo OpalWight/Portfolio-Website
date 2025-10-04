@@ -57,6 +57,24 @@ const Projects = () => {
         "Built responsive React/TypeScript frontend with real-time map rendering, handling complex state management for multiple user inputs and dynamic route visualization.",
         "Engineered end-to-end geospatial data pipeline processing coordinates, API responses, and algorithm outputs into interactive visualizations with smooth animations."
       ]
+    },
+    {
+      title: "PC Parts Sentiment Analyzer",
+      description: "Engineered a comprehensive sentiment analysis tool that processes Reddit discussions to analyze brand perception across PC component categories. Built scalable data pipeline with Reddit API integration and VADER sentiment analysis, delivering actionable insights for hardware enthusiasts and market researchers.",
+      link: "https://github.com/your-username/PCPartsSentiment",
+      technologies: [
+        "Python",
+        "NLTK",
+        "PRAW",
+        "VADER Sentiment",
+        "Reddit API"
+      ],
+      features: [
+        "Architected automated Reddit scraping system using PRAW library with rate limiting and API compliance, processing thousands of posts and comments from r/pcbuilds subreddit.",
+        "Developed intelligent brand recognition engine using regex patterns across 8 PC component categories (CPU, GPU, motherboard, memory, storage, PSU, case, cooling) with comprehensive brand database.",
+        "Implemented VADER sentiment analysis pipeline delivering real-time sentiment scores and brand rankings, enabling data-driven insights into hardware community preferences.",
+        "Built modular CLI interface with configurable parameters for post count and verbose output, featuring environment-based configuration management for seamless deployment across environments."
+      ]
     }
   ];
 
